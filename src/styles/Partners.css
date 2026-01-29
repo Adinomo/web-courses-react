@@ -1,0 +1,41 @@
+.partner-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-partner {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-partner img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.kartu-partners p {
+  font-family: "comic sans ms";
+  font-weight: 80;
+  font-size: 25px;
+  text-align: center;
+  color: #364f6b;
+}
+
+#partners {
+  max-width: 1200px;
+  margin-top: 30vh;
+  padding: 0 20px;
+}
+
+#partners .tengah {
+  text-align: center;
+  width: 100%;
+}
+
+#partners .kolom {
+  width: 100%;       /* Biar dia selebar layar */
+  margin: 0 auto;    /* Posisikan di tengah */
+  max-width: 120vh;
+}
