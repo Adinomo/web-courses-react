@@ -1,7 +1,7 @@
 export const tutorsSection = {
-    content: `<p class="deskripsi">Our Top Tutors</p>
-            <h2>Tutors</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt voluptatibus possimus blanditiis reiciendis. Qui, facilis! Delectus exercitationem dolores sapiente?</p>`
+    content:
+            `<h2>pengajar</h2>
+            <p>Pengajar dalam online course adalah praktisi dan mentor berpengalaman yang tidak hanya menguasai teori, tetapi juga paham praktik di dunia nyata. Mereka membimbing dengan metode yang relevan, bahasa yang mudah dipahami, serta studi kasus yang sesuai dengan kebutuhan industri saat ini. Dengan pengajar yang tepat, proses belajar jadi lebih terarah, aplikatif, dan membantu peserta membangun skill yang benar-benar siap digunakan.</p>`
 }
 
 export const tutorsList = [

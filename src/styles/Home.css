@@ -29,11 +29,13 @@ a.tbl-pink {
   background: #fc5185;
   border-radius: 20px;
   margin-top: 20px;
+  margin-left: 50px;
   padding: 15px 20px 15px 20px;
   color: #ffffff;
   cursor: pointer;
   font-weight: bold;
 }
+
 
 a.tbl-pink:hover {
   background: #3f72af;
@@ -46,12 +48,18 @@ a.tbl-pink:hover {
   justify-content: space-between;
   min-height: 20vh;
   gap: 60px;
+  margin-top: 15vh;
 }
 
 #home img {
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width: 400px;
+
+}
+#home .kolom {
+  width: 100%;
+  max-width: 400px;
+
 }
 
 p {
@@ -59,18 +67,13 @@ p {
   padding: 10px 0px 10px 0px;
 }
 
-.kolom {
-  /* margin-top: 50px;
-  margin-bottom: 50px; */
-  max-width: 520px;
-  
-}
 
 .kolom .deskripsi {
   font-size: 20px;
   font-weight: bold;
   font-family: "comic sans ms";
   color: #364f6b;
+  margin-left: 30px;
 }
 
 h2 {
@@ -100,8 +103,9 @@ h2 {
 
 #courses img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
+  margin-left: 20vh;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,7 +1,7 @@
 export const partnersSection = {
-    content: ` <p className="deskripsi">Our Top Partners</p>
-            <h2>Partners</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni tempore expedita sequi. Similique rerum doloremque impedit saepe atque maxime.</p>`
+    content: ` 
+            <h2>Mitra</h2>
+            <p>Mitra dalam online course berperan sebagai pendukung kualitas pembelajaran dengan menghadirkan kolaborasi nyata dari dunia industri dan komunitas profesional. Kehadiran mitra memastikan materi tetap relevan, membuka peluang pengalaman praktis, serta memperluas jaringan bagi peserta sejak dini.</p>`
 }
 
 export const partnersList = [

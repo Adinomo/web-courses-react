@@ -1,9 +1,9 @@
 export const homeSection = {
 
     image : './public/assets/Home.jpeg',
-    content :   `<p className="deskripsi">Belajar Programming #dirumahaja</p>
-                <h2>Tetap Sehat, Tetap Semangat</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, nobis.</p>
+    content :   `<p className="deskripsi">Belajar bareng wibocode</p>
+                <h2>coding bareng</h2>
+                <p>selamat datang dan selamat belajar bareng </p>
                 <p><a href="" className="tbl-pink">Pelajari Lebih Lanjut</a></p>`
 }
 

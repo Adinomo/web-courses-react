@@ -1,62 +1,71 @@
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import { homeSection } from '../Data/HomeSection';
-import { coursesSection } from '../Data/CoursesSection'
-import { tutorsSection, tutorsList } from '../Data/TutorsSection'
-import Tutors from '../components/Tutors'
-import { partnersSection, partnersList} from '../Data/PartnersSection';
-import Partners from '../components/Partners'
-import Contact from '../components/Contact'
-import { contactSection } from '../Data/ContactSection';
+import { useEffect } from "react";
 
-import parse from 'html-react-parser';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { homeSection } from "../Data/HomeSection";
+import { coursesSection } from "../Data/CoursesSection";
+import { tutorsSection, tutorsList } from "../Data/TutorsSection";
+import Tutors from "../components/Tutors";
+import { partnersSection, partnersList } from "../Data/PartnersSection";
+import Partners from "../components/Partners";
+import Contact from "../components/Contact";
+import { contactSection } from "../Data/ContactSection";
 
-import '../styles/Home.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+import parse from "html-react-parser";
 
+import "../styles/Home.css";
 
 function Home() {
-  return (
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
+  return (
     <>
-    <Navbar />
-    <div className='wrapper'>
-         <section id="home">
+      <Navbar />
+      <div className="wrapper">
+        <section id="home">
+          <div className="img-aos" data-aos="fade-right">
             <img src={homeSection.image} alt="HomeImage" />
-            <div className="kolom">
+          </div>
+          <div className="kolom" data-aos="fade-left">
             {parse(homeSection.content)}
-            </div>
+          </div>
         </section>
         {/* {menu courses} */}
         <section id="courses">
-            <div className="kolom">
-            {parse(coursesSection.content)}
-            </div>
-            <img src={coursesSection.image} alt="CoursesImage" />
+          <div className="kolom">{parse(coursesSection.content)}</div>
+
+          <img src={coursesSection.image} alt="CoursesImage" />
         </section>
         {/*(tutor)*/}
-              <section id="tutors">
-            <div className="tengah">
-                <div className="kolom">
-                {parse(tutorsSection.content)}
-                </div>
-                <Tutors tutorsList={tutorsList} />
-                </div>
-                </section>
-              {/* partner */}
-          <section id="partners">
-            <div className="tengah">
-                <div className="kolom">
-                  {parse(partnersSection.content)}
-                  <Partners partnersList={partnersList} />
-                </div>
-                </div>
+        <section id="tutors">
+          <div className="tengah">
+            <div className="kolom">{parse(tutorsSection.content)}</div>
+            <Tutors tutorsList={tutorsList} />
+          </div>
         </section>
-    </div>
-    <Contact contactsection={contactSection} />   
-    <Footer />
+        {/* partner */}
+        <section id="partners">
+          <div className="tengah">
+            <div className="kolom">
+              {parse(partnersSection.content)}
+              <Partners partnersList={partnersList} />
+            </div>
+          </div>
+        </section>
+      </div>
+      <Contact contactsection={contactSection} />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

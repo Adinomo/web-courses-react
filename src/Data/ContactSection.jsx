@@ -1,6 +1,6 @@
 export const contactSection = [
   {
-    content: `<h3>RumahRafif.</h3>
+    content: `<h3>wibocode</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>`,
   },
   {
@@ -9,11 +9,11 @@ export const contactSection = [
   },
   {
     content: `<h3>Contact</h3>
-                    <p>Jl. Laksda Adisucipto Sleman Yogyakarta</p>
+                    <p>Jl. pisang desa ngunut,sukoharjo, jawa tengah</p>
                     <p>Kode Pos: 57365</p>`,
   },
   {
     content: `<h3>Social</h3>
-                    <p><b>YouTube: </b>Programming di RumahRafif</p>`,
+                    <p><b>YouTube: </b>Wibocode</p>`,
   },
 ];
